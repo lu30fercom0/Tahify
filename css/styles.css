@@ -75,6 +75,30 @@ p {
     font-size: 1.5rem;
 }
 
+.list {
+    list-style: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-headings);
+}
+
+.list--inline .list--item {
+    display: inline-block;
+    margin-right: 2rem;
+
+}
+
+.list--tick {
+    margin-top: 4rem;
+    font-size: 2.4rem;
+}
+
+.list--tick .list--item {
+    margin-bottom: 3rem;
+    list-style-image: url(../Image/tick.svg);
+    padding-left: 0.5rem;
+}
+
 @media screen and (min-width:1024px) {
     h1 {
         font-size: 8rem;
@@ -102,5 +126,19 @@ p {
 
     .badge--small {
         font-size: 1.2rem;
+    }
+
+    .list--inline .list--item {
+        display: inline-block;
+        margin-right: 1.5rem;
+    }
+
+    .list--tick {
+        font-size: 1.8rem;
+    }
+
+    .list--tick .list--item {
+        margin-bottom: 2rem;
+        padding-left: 0;
     }
 }
