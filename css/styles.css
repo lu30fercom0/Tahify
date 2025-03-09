@@ -38,6 +38,8 @@ p {
     color: var(--color-accent);
     text-transform: uppercase;
     font-weight: bold;
+    display: block;
+    margin-bottom: 1rem;
 }
 
 .link-arrow::after {
@@ -51,7 +53,29 @@ p {
     margin-left: 10px;
 }
 
-@media screen and (min-width:768px) {
+.badge {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+    color: #fff;
+    white-space: nowrap;
+    border-radius: 20px;
+    
+}
+
+.badge--primary {
+    background-color: var(--color-primary);
+}
+
+.badge--secondary {
+    background-color: var(--color-secondary);
+}
+
+.badge--small {
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width:1024px) {
     h1 {
         font-size: 8rem;
     }
@@ -70,5 +94,13 @@ p {
 
     .link-arrow {
         font-size: 1.5rem;
+    }
+
+    .badge {
+        font-size: 1.5rem;
+    }
+
+    .badge--small {
+        font-size: 1.2rem;
     }
 }
