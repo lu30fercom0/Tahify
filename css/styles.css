@@ -52,7 +52,7 @@
     background-color: #fff;
     color: var(--color-headings);
     border: 2px solid var(--color-headings);
-    transition: background-color , color 1s;
+    transition: background-color 0.3s , color 0.3s;
 }
 
 .btn--headings:hover {
