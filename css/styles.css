@@ -4,141 +4,58 @@
     --color-accent: #ff3400;
     --color-headings: #1b0760;
     --color-body: #918ca4;
-    font-size: 65.5%;
+    font-size: 62.5%;
     margin: 1rem;
     font-family: inter;
 }
 
-h1, h2, h3 {
-    color: var(--color-headings);
-    margin-bottom: 1rem;
+*, *::after, *::before {
+    box-sizing: border-box;
 }
 
-h1 {
-    font-size: 7rem;
-}
-
-h2 {
-    font-size: 4rem;
-}
-
-h3 {
-    font-size: 3rem;
-}
-
-p {
-    font-size: 2rem;
-    margin-top: 0;
-    line-height: 1.5;
-}
-
-.link-arrow {
-    font-size: 2rem;
-    text-decoration: none;
-    color: var(--color-accent);
-    text-transform: uppercase;
-    font-weight: bold;
+.btn {
     display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 0;
+    text-decoration: none;
+    color: #fff;
+    padding: 2rem 3rem;
+    border-radius: 40px;
     margin-bottom: 1rem;
 }
 
-.link-arrow::after {
-    content: "-->";
-    margin-left: 5px;
-    transition: margin 0.15s;
-    color: var(--color-accent);
+.btn--block {
+    cursor: pointer;
 }
 
-.link-arrow:hover::after {
-    margin-left: 10px;
-}
-
-.badge {
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 0.5rem 2rem;
-    color: #fff;
-    white-space: nowrap;
-    border-radius: 20px;
-    
-}
-
-.badge--primary {
+.btn--primary {
     background-color: var(--color-primary);
 }
 
-.badge--secondary {
+.btn--primary:hover {
+    background-color: #1472eb;
+}
+
+.btn--secondary {
     background-color: var(--color-secondary);
 }
 
-.badge--small {
-    font-size: 1.5rem;
+.btn--secondary:hover {
+    background-color: #00bde8;
 }
 
-.list {
-    list-style: none;
-    font-size: 2rem;
-    font-weight: bold;
+.btn--headings {
+    background-color: #fff;
     color: var(--color-headings);
+    border: 2px solid var(--color-headings);
+    transition: background-color , color 1s;
 }
 
-.list--inline .list--item {
-    display: inline-block;
-    margin-right: 2rem;
-
-}
-
-.list--tick {
-    margin-top: 4rem;
-    font-size: 2.4rem;
-}
-
-.list--tick .list--item {
-    margin-bottom: 3rem;
-    list-style-image: url(../Image/tick.svg);
-    padding-left: 0.5rem;
-}
-
-@media screen and (min-width:1024px) {
-    h1 {
-        font-size: 8rem;
-    }
-    
-    h2 {
-        font-size: 4rem;
-    }
-    
-    h3 {
-        font-size: 2.4rem;
-    }
-    
-    p {
-        font-size: 1.8rem;
-    }
-
-    .link-arrow {
-        font-size: 1.5rem;
-    }
-
-    .badge {
-        font-size: 1.5rem;
-    }
-
-    .badge--small {
-        font-size: 1.2rem;
-    }
-
-    .list--inline .list--item {
-        display: inline-block;
-        margin-right: 1.5rem;
-    }
-
-    .list--tick {
-        font-size: 1.8rem;
-    }
-
-    .list--tick .list--item {
-        margin-bottom: 2rem;
-        padding-left: 0;
-    }
+.btn--headings:hover {
+    background-color: var(--color-headings);
+    color: #fff;
 }
