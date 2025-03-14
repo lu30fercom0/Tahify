@@ -4,6 +4,7 @@
     --color-accent: #ff3400;
     --color-headings: #1b0760;
     --color-body: #918ca4;
+    --color-borders: #ccc;
     font-size: 62.5%;
     margin: 1rem;
     font-family: inter;
@@ -58,4 +59,48 @@
 .btn--headings:hover {
     background-color: var(--color-headings);
     color: #fff;
+}
+
+.search-container {
+    display: flex;
+    border: 1px solid var(--color-borders);
+    border-radius: 50px;
+}
+
+.search-input {
+    padding: 1.5rem 3.5rem;
+    border: 0;
+    outline: 0;
+    font-size: 2rem;
+    color: var(--color-headings);
+    flex-grow: 1;
+    padding-left: 1rem;
+}
+
+::placeholder {
+    color: #cdcbd7;
+}
+
+.search-btn {
+    background-color: var(--color-accent);
+    border: 0;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 2.5rem 4.5rem;
+    margin: 5px;
+    outline: 0;
+}
+
+.icon {
+    padding: 1rem;
+    background-color: gold;
+    border-radius: 100%;
+}
+
+.icon-search {
+    fill: var(--color-primary);
+    width: 48px;
+    height: 48px;
 }
