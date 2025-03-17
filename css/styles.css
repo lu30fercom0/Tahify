@@ -14,95 +14,101 @@
     box-sizing: border-box;
 }
 
-.plan {
-    display: flex;
-    justify-content: center;
-}
-
-.card {
-    color: #fff;
-    white-space: nowrap;
-    width: 80%;
-    border-radius: 10px;
+.testimonial {
     box-shadow: 0 0 20px 10px var(--color-borders);
-    overflow: hidden;
+    margin: 1rem;
+    display: grid;
+    border-radius: 10px;
 }
 
-.card--header {
-    font-size: 2rem;
-    padding: 2rem 3rem;
-    margin-top: 0;
+.quote--img{
+position: relative;
 }
 
-.card--primary {
-    background-color: var(--color-primary);
+.quote--img > img {
+    width: 100%;
+    padding: 5rem;
 }
 
-.price {
-    font-size: 6rem;
-}
-
-.month {
-    font-size: 2.4rem;
-    font-weight: 200;
-    opacity: 0.8;
-}
-
-.off {
-    background-color: #126de4;
-    padding: 0.5rem 1.5rem;
-    font-size: 1.6rem;
-    font-weight: 600;
-    border-radius: 30px;
-    margin-left: 5px;
-}
-
-.discription {
-    font-size: 2rem;
-    color: #fff;
-    opacity: 0.6;
-    font-weight: 200;
-    letter-spacing: 1px;
-}
-
-
-ul {
-    padding-left: 2rem;
-}
-
-li {
-    padding-left: 5px;
-    list-style-image: url(../Image/tick.svg);
-    color: var(--color-headings);
-    margin: 3.5rem;
-    font-size: 2rem;
-    font-weight: 500;
-}
-
-.card--btn-container {
+.quote--container {
     display: flex;
-    justify-content: center;
-    margin-bottom: 4rem;
+    margin-left: 4.5rem;
 }
 
-.card--btn {
-    font-weight: 600;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    background-color: var(--color-headings);
-    color: #fff;
-    border: 0;
-    width: 80%;
-    padding: 2rem;
-    border-radius: 40px;
+.quote--text {
+    font-size: 2.4rem;
+    font-style: italic;
+    color: #5c5577;
 }
 
-@media screen and (min-width:1024px) {
-    .plan {
-        justify-content: start;
+.quote--text::before {
+    content: open-quote;
+}
+
+.quote--text::after {
+    content: close-quote;
+}
+
+.quote--author {
+    font-size: 3rem;
+    margin: 0 0 0 1rem;
+    color: var(--color-headings);
+}
+
+.quote--company {
+    color: var(--color-body);
+    font-size: 2rem;
+    opacity: 0.4;
+    margin: 0 0 3rem 0.8rem;
+}
+
+.icon--author {
+    position: relative;
+    top: -10px;
+    margin-top: 0.5rem;
+    width: 48px;
+    height: 48px;
+    fill: var(--color-primary);
+}
+
+.icon--quote--container {
+    display: inline-block;
+    position: absolute;
+    top: 8rem;
+    right: 18px;
+    background-color: var(--color-accent);
+    width: 64px;
+    border-radius: 100%;
+}
+
+.icon--quote {
+    fill: #fff;
+    width: 64px;
+    height: 64px;
+    padding: 1rem;
+}
+
+@media screen and (min-width:768px) {
+
+    .testimonial {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .card {
-        width: 33%;
+    .testimonial > img {
+        padding: 5rem;
+    }
+
+    .quote--text {
+        font-size: 2rem;
+    }
+
+    .quote--author {
+        font-size: 2.4rem;
+    }
+
+    .quote--company {
+        font-size: 1.6rem;
     }
 }
+
+

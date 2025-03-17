@@ -1,0 +1,121 @@
+:root {
+    --color-primary: #2584ff;
+    --color-secondary: #00d0ff;
+    --color-accent: #ff3400;
+    --color-headings: #1b0760;
+    --color-body: #918ca4;
+    --color-body--2: #5c5577;
+    --color-borders: #ccc;
+    font-size: 62.5%;
+    margin: 1rem;
+    font-family: inter;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.testimonial {
+    margin: 3rem;
+    display: grid;
+    position: relative;
+    padding: 3rem;
+    box-shadow: 0 0 20px 10px var(--color-borders);
+    border-radius: 10px;
+}
+
+.quote--img > img {
+    width: 100%;
+    padding: 2rem 2rem 4rem 2rem;
+}
+
+.quote--img {
+    position: relative;
+}
+
+.quote--icon {
+    display: inline-block;
+    fill: #fff;
+    background-color: var(--color-accent);
+    width: 64px;
+    height: 64px;
+    padding: 1.5rem;
+    border-radius: 100%;
+    overflow: visible;
+    position: absolute;
+    top: 3rem;
+    right: -12px;
+}
+
+.quote {
+    padding-left: 3rem;
+}
+
+.quote--text {
+    color: var(--color-body--2);
+    font-size: 3rem;
+    font-style: italic;
+    margin-bottom: 3rem;
+}
+
+.quote--text::before {
+    content: open-quote;
+}
+
+.quote--text::after {
+    content: close-quote;
+}
+
+.quote--author-icon {
+    width: 48px;
+    height: 48px;
+
+}
+
+.quote--author-name {
+    font-family: sans-serif;
+    font-size: 3rem;
+    color: var(--color-headings);
+    font-weight: 600;
+    position: relative;
+    top: -15px;
+    margin-left: 10px;
+}
+
+.quote--company {
+    font-size: 2rem;
+    color: var(--color-body);
+    opacity: 0.5;
+    margin-left: 1rem;
+    margin-left: 7rem;
+}
+
+@media screen and (min-width:768px) {
+    .testimonial {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quote--text , .quote--author-name {
+        font-size: 2.4rem;
+    }
+
+    .quote--img > img {
+        padding: 0 3rem 0 0;
+    }
+
+    .quote--company {
+        font-size: 1.6rem;
+    }
+
+    .quote {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .testimonial {
+        margin: 10rem;
+    }
+}
