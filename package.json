@@ -1,0 +1,23 @@
+{
+  "name": "zohify",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lu30fercom0/Tahify.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lu30fercom0/Tahify/issues"
+  },
+  "homepage": "https://github.com/lu30fercom0/Tahify#readme",
+  "description": "",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}

@@ -3,47 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="html & css education for free" />
+    <meta property="og:title" content="tahify" />
+    <meta property="og:description" content="html & css education for free" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftexify.io%2Fvendor-application%2F&psig=AOvVaw0mHgGIWxsKJo5P7PSJIsgS&ust=1743354633433000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKiZsaDkr4wDFQAAAAAdAAAAABAE"
+    />
+    <title>tahify</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <div class="testimonial">
-      <div class="quote--img">
-        <img src="Image/testimonial.jpg" alt="A man is smiling" />
-        <span class="icon--quote--container">
-          <svg class="icon--quote">
-            <use xlink:href="image/sprite.svg#quotes"></use>
-          </svg>
-        </span>
-      </div>
-      <div class="quote">
-        <blockquote>
-          <p class="quote--text">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. A quia
-            exercitationem impedit at officiis accusamus in consectetur! Quae
-            ipsum praesentium minima. Aliquam expedita repellendus velit odio
-            voluptates vero laudantium sint!
-          </p>
-        </blockquote>
-        <footer class="quote--container">
-          <div class="icon--author--container">
-            <svg class="icon--author">
-              <use xlink:href="image/sprite.svg#line"></use>
-            </svg>
+    <div class="footer-container">
+      <footer class="footer">
+        <section class="footer--section collapsible collapsible--expanded">
+          <div class="footer--header">
+            <h3 class="footer--heading">products</h3>
+            <img alt="legoo" class="chevron" src="Image/chevron.svg" />
           </div>
-          <div class="quote--body">
-            <h3 class="quote--author">Jhone Lumeo</h3>
-            <p class="quote--company">Mosh Company ceo</p>
+          <ul class="footer--list list clops--list">
+            <li class="footer--item item"><a href="#">WordPress Hosting</a></li>
+            <li class="footer--item item">
+              <a href="#">Free Automated WordPress</a>
+            </li>
+            <li class="footer--item item"><a href="#">Migrations</a></li>
+            <li class="footer--item item"><a href="#">Domain Names</a></li>
+            <li class="footer--item item">
+              <a href="#">Monthly Web Hosting</a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer--section collapsible collapsible--expanded">
+          <div class="footer--header">
+            <h3 class="footer--heading">COMPANY</h3>
+            <img alt="legoo" class="chevron" src="Image/chevron.svg" />
           </div>
-        </footer>
-      </div>
+          <ul class="footer--list list clops--list">
+            <li class="footer--item item"><a href="#">WordPress Hosting</a></li>
+            <li class="footer--item item">
+              <a href="#">Free Automated WordPress</a>
+            </li>
+            <li class="footer--item item"><a href="#">Migrations</a></li>
+            <li class="footer--item item"><a href="#">Domain Names</a></li>
+            <li class="footer--item item">
+              <a href="#">Monthly Web Hosting</a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer--section collapsible collapsible--expanded">
+          <div class="footer--header">
+            <h3 class="footer--heading">SUPPORT</h3>
+            <img alt="legoo" class="chevron" src="Image/chevron.svg" />
+          </div>
+          <ul class="footer--list list clops--list">
+            <li class="footer--item item"><a href="#">WordPress Hosting</a></li>
+            <li class="footer--item item">
+              <a href="#">Free Automated WordPress</a>
+            </li>
+            <li class="footer--item item"><a href="#">Migrations</a></li>
+            <li class="footer--item item"><a href="#">Domain Names</a></li>
+            <li class="footer--item item">
+              <a href="#">Monthly Web Hosting</a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer--section collapsible collapsible--expanded">
+          <div class="footer--header">
+            <h3 class="footer--heading">DOMAINS</h3>
+            <img alt="legoo" class="chevron" src="Image/chevron.svg" />
+          </div>
+          <ul class="footer--list list clops--list">
+            <li class="footer--item item"><a href="#">WordPress Hosting</a></li>
+            <li class="footer--item item">
+              <a href="#">Free Automated WordPress</a>
+            </li>
+            <li class="footer--item item"><a href="#">Migrations</a></li>
+            <li class="footer--item item"><a href="#">Domain Names</a></li>
+            <li class="footer--item item">
+              <a href="#">Monthly Web Hosting</a>
+            </li>
+          </ul>
+        </section>
+        <div class="logo">
+          <a href="#"><img alt="legoo" src="Image/logo.svg" /></a>
+        </div>
+      </footer>
     </div>
+    <script>
+      const collapsibles = document.querySelectorAll(".collapsible");
+      collapsibles.forEach((item) =>
+        item.addEventListener("click", function () {
+          this.classList.toggle("collapsible--expanded");
+        })
+      );
+    </script>
   </body>
 </html>

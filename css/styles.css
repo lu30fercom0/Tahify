@@ -6,7 +6,6 @@
     --color-body: #918ca4;
     --color-borders: #ccc;
     font-size: 62.5%;
-    margin: 1rem;
     font-family: inter;
 }
 
@@ -14,101 +13,156 @@
     box-sizing: border-box;
 }
 
-.testimonial {
-    box-shadow: 0 0 20px 10px var(--color-borders);
-    margin: 1rem;
-    display: grid;
-    border-radius: 10px;
+h2 {
+  font-size: 4rem;
+  font-weight: 700;
 }
 
-.quote--img{
-position: relative;
+h3 {
+  font-size: 3rem;
+  font-weight: 700;
 }
 
-.quote--img > img {
-    width: 100%;
-    padding: 5rem;
+a {
+  text-decoration: 0;
 }
 
-.quote--container {
-    display: flex;
-    margin-left: 4.5rem;
+.footer-container {
+  padding: 0 1rem;
+  background-color: #232323;
 }
 
-.quote--text {
-    font-size: 2.4rem;
-    font-style: italic;
-    color: #5c5577;
+.footer--section {
+  border-bottom: 1.5px solid #393939;
 }
 
-.quote--text::before {
-    content: open-quote;
+.footer--header {
+  display: flex;
+  justify-content: space-between;
 }
 
-.quote--text::after {
-    content: close-quote;
+.footer--heading {
+  color: #fff;
+  text-transform: uppercase;
+  margin-left: 0;
 }
 
-.quote--author {
-    font-size: 3rem;
-    margin: 0 0 0 1rem;
-    color: var(--color-headings);
+.chevron {
+  width: 48px;
+  height: 48px;
+  align-self: center;
 }
 
-.quote--company {
-    color: var(--color-body);
-    font-size: 2rem;
-    opacity: 0.4;
-    margin: 0 0 3rem 0.8rem;
+.header--text {
+  font-size: 2.4rem;
+  color: var(--color-body);
 }
 
-.icon--author {
-    position: relative;
-    top: -10px;
-    margin-top: 0.5rem;
-    width: 48px;
-    height: 48px;
-    fill: var(--color-primary);
+.icon--container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  width: 74px;
+  height: 74px;
+  background-color: azure;
 }
 
-.icon--quote--container {
-    display: inline-block;
-    position: absolute;
-    top: 8rem;
-    right: 18px;
-    background-color: var(--color-accent);
-    width: 64px;
-    border-radius: 100%;
+.section--header {
+  margin-bottom: 3rem;
 }
 
-.icon--quote {
-    fill: #fff;
-    width: 64px;
-    height: 64px;
-    padding: 1rem;
+.list {
+  list-style: none;
+  margin-top: 0;
+}
+
+.footer--list {
+  font-size: 2.4rem;
+}
+
+.item {
+  margin-bottom: 2.5rem;
+}
+
+.footer--item > a {
+  color: var(--color-body);
+  transition: color 0.3s;
+}
+
+.footer--item > a:hover {
+  color: #fff;
+}
+
+.collapsible .chevron {
+  transform: rotate(0deg);
+}
+
+.collapsible--expanded .chevron {
+  transform: rotate(-90deg);
+}
+
+.collapsible .clops--list {
+  max-height: 100%;
+  overflow: auto;
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .clops--list {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  padding: 8rem;
 }
 
 @media screen and (min-width:768px) {
 
-    .testimonial {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    max-width: 1140px;
+    margin: auto;
+  }
 
-    .testimonial > img {
-        padding: 5rem;
-    }
+  .footer--section {
+    margin: 0 0.5rem;
+  }
 
-    .quote--text {
-        font-size: 2rem;
-    }
 
-    .quote--author {
-        font-size: 2.4rem;
-    }
+  .footer--list {
+    padding: 0;
+  } 
 
-    .quote--company {
-        font-size: 1.6rem;
-    }
+  .footer .logo {
+    width: 15%;
+    height: 15%;
+    grid-row-start: 1;
+    padding: 0;
+    margin: 2rem 0 0 0;
+  }
+
+  .footer--heading {
+    font-size: 1.6rem;
+  }
+
+  .footer--item {
+    font-size: 1.5rem;
+  }
+
+  .footer--section .chevron {
+    display: none;
+  }
+
+  .footer--section .footer--list {
+    max-height: 100%;
+    opacity: 1;
+    overflow: hidden;
+  }
 }
-
-
